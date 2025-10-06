@@ -1,15 +1,31 @@
-fastapi==0.95.2
-uvicorn==0.22.0
-python-multipart==0.0.6
-Pillow==10.0.0
-pytesseract==0.3.10
-PyMuPDF==1.23.6
-numpy==1.26.4
-opencv-contrib-python==4.8.1.78
-transformers==4.34.0
-torch==2.1.0
-python-jose==3.3.0
-passlib==1.8.2
-typer==0.7.0
-google-generativeai==0.2.0
-protobuf>=3.19.5,<5
+# Core dependencies
+fastapi>=0.95.2
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+pillow>=9.5.0
+pytesseract>=0.3.10
+PyMuPDF>=1.25.0          # compatible with Python 3.11+
+transformers>=4.35.0
+torch>=2.1.0
+python-jose>=3.3.0
+passlib>=1.7.4           # compatible with Python 3.11+
+bcrypt>=4.0.1
+
+# PDF and OCR related
+pdf-lib>=1.17.1          # if used
+pdfplumber>=0.9.0
+
+# MongoDB
+pymongo>=4.3.3
+
+# AI/Generative packages
+google-generativeai>=0.2.0
+protobuf>=3.20.3,<5.0.0   # compatible with google-generativeai
+
+# Utilities
+requests>=2.31.0
+opencv-python>=4.7.0.72   # compatible with Python 3.11+
+opencv-contrib-python>=4.7.0.72
+
+# Optional CLI / helpers
+typer>=0.9.0
