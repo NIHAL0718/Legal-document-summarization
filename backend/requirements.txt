@@ -1,15 +1,24 @@
+# Web framework & API
 fastapi==0.118.0
 uvicorn==0.37.0
 python-multipart==0.0.20
-pillow==11.3.0
-pytesseract==0.3.13
+
+# Image / PDF processing
+Pillow==11.3.0
 PyMuPDF==1.26.4
-transformers==4.57.0
-torch==2.2.2
+pytesseract==0.3.13
+opencv-python==4.12.0
+
+# NLP
 spacy==3.7.4
-deep-translator==1.11.4
-opencv-python-headless==4.12.0.88
-numpy==1.26.4
-google-generativeai==0.8.5
+transformers==4.57.0
+torch==2.8.0
+
+# Utilities
+numpy>=1.23,<2.3
 requests==2.32.5
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+deep-translator==1.10.1
+google-generativeai==0.8.5
+
+# Optional (if you use async typing features)
+typing-extensions==4.15.0
