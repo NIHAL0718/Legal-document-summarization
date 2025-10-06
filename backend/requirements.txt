@@ -1,32 +1,15 @@
-# Core web and API
-fastapi==0.118.0           # Conflict: 0.103.1 vs 0.118.0 → using 0.118.0 (latest)
-uvicorn==0.23.2
+fastapi==0.95.2
+uvicorn==0.22.0
 python-multipart==0.0.6
-
-# Image and PDF processing
-Pillow==10.0.0             # Conflict: 10.0.0 vs 11.3.0 → using 11.3.0
-pytesseract==0.3.10       # Conflict: 0.3.10 vs 0.3.13 → using 0.3.13
-PyMuPDF==1.23.0
-fitz==0.0.1.dev2           # Optional; may be redundant with PyMuPDF
-opencv-python==4.8.1.78
+Pillow==10.0.0
+pytesseract==0.3.10
+PyMuPDF==1.23.6
+numpy==1.26.4
 opencv-contrib-python==4.8.1.78
-
-# ML / NLP
-transformers==4.30.2
-torch==2.0.1             # Conflict: 2.0.1 vs 2.7.1 → using 2.7.1
-spacy==3.8.7
-protobuf==6.32.1
-numpy==1.24.4
-
-# Auth / security
+transformers==4.34.0
+torch==2.1.0
 python-jose==3.3.0
-passlib==1.7.4
-bcrypt==4.0.1
-
-# Utilities / HTTP
-python-dotenv==1.0.0
-httpx==0.24.1
-Requests==2.32.5
-deep_translator==1.11.4
-google-generativeai
-pydantic==2.11.10
+passlib==1.8.2
+typer==0.7.0
+google-generativeai==0.2.0
+protobuf>=3.19.5,<5
