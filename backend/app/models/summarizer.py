@@ -1,5 +1,8 @@
 from transformers import pipeline
 import spacy
+import subprocess
+import sys
+
 subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
 
 # Load SpaCy English model
