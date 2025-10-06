@@ -1,0 +1,145 @@
+/* About Page Container */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ffffff, #a8a8a8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.2rem;
+    color: #a8a8a8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  
+  .feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .feature-description {
+    color: #a8a8a8;
+    line-height: 1.6;
+  }
+  
+  .mission-section {
+    margin-top: 6rem;
+    text-align: center;
+  }
+  
+  .mission-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  .mission-text {
+    color: #a8a8a8;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .stat-item {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-label {
+    color: #a8a8a8;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2.5rem;
+    }
+    
+    .about-container {
+      padding: 2rem 1rem;
+    }
+    
+    .feature-card {
+      padding: 1.5rem;
+    }
+    
+    .mission-title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }

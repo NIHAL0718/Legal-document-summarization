@@ -1,0 +1,218 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.welcome-section {
+  flex: 1;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.welcome-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.welcome-section p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.register-button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.login-section {
+  flex: 1;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login-content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-section h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.login-input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-input:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.input-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.login-button:hover {
+  background-color: white;
+  transform: translateY(-2px);
+}
+
+.login-button:disabled {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: #f87171;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  border-left: 3px solid #f87171;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  
+  .welcome-section, .login-section {
+    flex: none;
+    width: 100%;
+  }
+  
+  .welcome-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .login-section {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+/* Adding subtle animations */
+.welcome-content, .login-content {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-wrapper {
+  animation: fadeIn 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.input-wrapper:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.login-button {
+  animation: fadeIn 0.5s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}

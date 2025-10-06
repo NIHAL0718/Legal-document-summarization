@@ -1,0 +1,36 @@
+/* Summarize.css */
+
+.loader {
+  border-top-color: #9ca3af; /* Tailwind gray-400 */
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  animation: spin 1s linear infinite;
+  border-width: 4px;
+  margin-top: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Optional: Customize scrollbars for summary boxes */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Tailwind gray-600 */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
