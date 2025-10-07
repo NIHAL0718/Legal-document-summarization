@@ -1,11 +1,7 @@
 from transformers import pipeline
 import spacy
-import subprocess
-import sys
 
-subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-
-# Load SpaCy English model
+# Load spaCy model (it must be installed in Docker build)
 nlp = spacy.load("en_core_web_sm")
 
 # Initialize summarization pipeline with a reliable model
